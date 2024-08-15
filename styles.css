@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: Arial, sans-serif;
+}
+
+.pages {
+  display: flex;
+  transition: transform 0.6s ease-in-out; /* Yana kaydırma geçişi */
+  width: 200%; /* İki sayfanın yan yana olması için genişlik */
+}
+
+.page {
+  width: 100vw; /* Her sayfa ekranın tamamını kaplayacak */
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#page1 {
+  background-color: #ffa600;
+}
+
+#page2 {
+  background-color: #f4f4f4;
+}
+
+.next-page {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.next-page:hover {
+  background-color: #555;
+}
